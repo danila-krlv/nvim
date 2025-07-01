@@ -57,7 +57,7 @@ local settings = {
    virtualedit = "all",
    backspace = { "indent", "eol", "start" }, -- allow backspacing over everything in insert mode
    mouse = "a",                              -- mouse support
-   listchars = { tab = "--", extends = ">", precedes = "<", space = "·"},
+   listchars = { tab = "··•", extends = ">", precedes = "<", space = "·"},
    list = true,
    tabstop = 4,
    shiftwidth = 4,
@@ -65,6 +65,8 @@ local settings = {
    writebackup = false,
    signcolumn = "yes",
 }
+
+vim.cmd.colorscheme("habamax")
 
 for k, v in pairs(settings) do
    vim.opt[k] = v
